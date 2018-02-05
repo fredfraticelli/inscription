@@ -99,7 +99,8 @@
             return regex.test(email);
         }
 
-        $('form').on('focus', '.form-control', function(){
+	// Checking fields on focus
+	$('form').on('focus', '.form-control', function(){
             var nb = $('form .field-not-ok');
             if( nb.length == 0 ) {
                 $('#ok').removeAttr('disabled');
@@ -143,8 +144,6 @@
             });
             jSonString += '}';
             console.log( jSonString );
-
-
 
 
 
