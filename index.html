@@ -111,6 +111,7 @@
             $(parent).toggleClass('has-error');
         });
 
+	// Checking fields on blur      
         $('form').on('blur', '.form-control', function(){
             var isRequire = $(this).attr('required');
 
